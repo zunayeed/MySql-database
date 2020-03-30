@@ -1,0 +1,8 @@
+To create database named mydate: mysql> create database mydate ; 
+To connect database:  mysql> use mydate ;
+                      mysql> connect mydate ; 
+// once in mydate, table can be created or drop
+
+To show all databases :  mysql> show databases; 
+
+To drop a database: mysql> drop database <database_name>
