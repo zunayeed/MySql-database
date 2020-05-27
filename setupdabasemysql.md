@@ -3,7 +3,7 @@
                       __mysql> connect mydate ;__ 
 // once in mydate, table can be created or drop
 
-- To show all databases :   __mysql> show databases;__ 
+- To show or list all databases :   __mysql> show databases;__ 
 
 - To drop a database:  mysql> drop database <database_name>
 - To create table: create table employees((eno int(5) primary key,ename varchar(20),esal double(10,2),eaddr varchar(20));
