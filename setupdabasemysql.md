@@ -1,4 +1,4 @@
-- To create database named mydate:    __mysql> create database mydate ;__ 
+- To create database named mydate:    __mysql> create database mydate ;__ // semicolon is a must 
 - To connect database:  __mysql> use mydate ;__
                       __mysql> connect mydate ;__ 
 // once in mydate, table can be created or drop
