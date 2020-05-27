@@ -14,6 +14,7 @@
 - insert into employees values(500,"Parvin", 4000, "Dhaka,Bangladesh");
  
 ##  Order By clause: 
+- [Order By Link](https://www.mysqltutorial.org/mysql-order-by/)
 - When you use the SELECT statement to query data from a table, the result set is not sorted. It means that the rows in the result set can be in any order. To sort the result set, you add the ORDER BY clause to the SELECT statement. The following illustrates the syntax of the ORDER BY  clause:
 ```
 SELECT 
@@ -35,4 +36,32 @@ SELECT
 FROM
     orderdetails
 ORDER BY subtotal DESC;
+```
+- The column alias can be used in the ORDER BY clause because the SELECT clause is evaluated before the ORDER BY clause. By the time the ORDER BY clause is evaluated, the column alias is accessible.
+- The ORDER BY  clause allows you to sort data using a custom list by using the FIELD()  function.
+`Suppose that you want to sort the sales orders based on their statuses in the following order:`
+```
+In Process
+On Hold
+Canceled
+Resolved
+Disputed
+Shipped
+```
+`To do this, you can use the FIELD() function to map each order status to a number and sort the result by the result of the FIELD() function:`
+
+```
+SELECT 
+    orderNumber, 
+    status
+FROM
+    orders
+ORDER BY 
+    FIELD(status,
+        'In Process',
+        'On Hold',
+        'Cancelled',
+        'Resolved',
+        'Disputed',
+        'Shipped');
 ```
