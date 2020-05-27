@@ -26,3 +26,13 @@ ORDER BY
    ...;
    ```
 - By default, the ORDER BY clause uses ASC if you don’t explicitly specify any option.
+* To make the query more readable, you can assign the expression in the SELECT clause a column alias and use that column alias in the ORDER BY clause as shown in the following query:
+```
+SELECT 
+    orderNumber,
+    orderLineNumber,
+    quantityOrdered * priceEach AS subtotal
+FROM
+    orderdetails
+ORDER BY subtotal DESC;
+```
