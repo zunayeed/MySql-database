@@ -25,3 +25,4 @@ ORDER BY
    column2 [ASC|DESC],
    ...;
    ```
+- By default, the ORDER BY clause uses ASC if you don’t explicitly specify any option.
