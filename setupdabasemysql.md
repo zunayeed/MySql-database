@@ -13,7 +13,7 @@
 - insert into employees values(400,"Mostafa", 4000, "Dhaka,Bangladesh");
 - insert into employees values(500,"Parvin", 4000, "Dhaka,Bangladesh");
  
-* Order By clause: 
+##  Order By clause: 
 - When you use the SELECT statement to query data from a table, the result set is not sorted. It means that the rows in the result set can be in any order. To sort the result set, you add the ORDER BY clause to the SELECT statement. The following illustrates the syntax of the ORDER BY  clause:
 ```
 SELECT 
