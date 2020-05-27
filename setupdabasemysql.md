@@ -38,7 +38,7 @@ FROM
 ORDER BY subtotal DESC;
 ```
 - The column alias can be used in the ORDER BY clause because the SELECT clause is evaluated before the ORDER BY clause. By the time the ORDER BY clause is evaluated, the column alias is accessible.
-- The ORDER BY  clause allows you to sort data using a custom list by using the FIELD()  function.
+- The ORDER BY  clause allows you to sort data using a custom list by using the __FIELD()  function.__
 `Suppose that you want to sort the sales orders based on their statuses in the following order:`
 ```
 In Process
